@@ -16,11 +16,11 @@ Event details endpoint: **http://www.skiddle.com/api/v1/events/12345/** (method:
 
 **radius:** (integer, optional) Find events within the specified miles radius (eg 10)
 
+**_To use geo searching, all 3 of the above parameters must be specified._**
+
 **country:** (string, optional) Find events within a certain country, using a specific country code (eg GB)
 
 **getdistance:** (bool, optional) Return the distance from your specified location _(for this parameter to work, you must also provide a latitude and a longitude)_
-
-**_To use geo searching, all 3 of the above parameters must be specified._**
 
 
 ### Event filters:
