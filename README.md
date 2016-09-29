@@ -114,7 +114,7 @@ Venue details endpoint: **http://www.skiddle.com/api/v1/venues/12345/** (method:
 
 #### VENUE FILTERS
 
-**type:** (string,optional) Type of venue. Chose from:
+**type:** (string, optional) Type of venue. Chose from:
 
 - B = Bar/Pub
 - N = Nightclub
