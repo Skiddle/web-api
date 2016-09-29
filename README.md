@@ -76,9 +76,9 @@ Event details endpoint: **http://www.skiddle.com/api/v1/events/12345/** (method:
 
 ## Venues
 
-Venues search endpoint: http://www.skiddle.com/api/v1/venues/ (method: GET) Gets multiple venues based upon search parameters (see below)
+Venues search endpoint: **http://www.skiddle.com/api/v1/venues/** (method: GET) Gets multiple venues based upon search parameters (see below)
 
-Venue details endpoint: http://www.skiddle.com/api/v1/venues/12345/ (method: GET) Gets information for a single venue
+Venue details endpoint: **http://www.skiddle.com/api/v1/venues/12345/** (method: GET) Gets information for a single venue
 
 ### Venue search parameters
 
@@ -112,7 +112,7 @@ Venue details endpoint: http://www.skiddle.com/api/v1/venues/12345/ (method: GET
  
 ## Artists
 
-Artists search endpoint: http://www.skiddle.com/api/v1/artists/ (method: GET) Gets multiple artists based upon search parameters (see below)
+Artists search endpoint: **http://www.skiddle.com/api/v1/artists/** (method: GET) Gets multiple artists based upon search parameters (see below)
 
 ### Artist search parameters
 
