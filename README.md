@@ -38,7 +38,7 @@ Event details endpoint: **http://www.skiddle.com/api/v1/events/12345/** (method:
 
 **radius:** (integer, optional) Find events within the specified miles radius (eg 10)
 
-> To use geo searching, all 3 of the above parameters must be specified.
+**_To use geo searching, all 3 of the above parameters must be specified._**
 
 **country:** (string, optional) Find events within a certain country, using a specific country code (eg GB)
 
@@ -110,7 +110,7 @@ Venue details endpoint: **http://www.skiddle.com/api/v1/venues/12345/** (method:
 
 **radius:** (decimal, optional) Find venues within the specified miles radius (eg 10)
 
-> To use geo searching, all 3 of the above parameters must be specified.
+**_To use geo searching, all 3 of the above parameters must be specified._**
 
 #### Venue filters:
 
