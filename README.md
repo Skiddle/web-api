@@ -73,6 +73,7 @@ Event details endpoint: **http://www.skiddle.com/api/v1/events/12345/** (method:
 **offset:** (integer, optional) Specify record number to start at (for paging, in conjunction with limit, order) (default 0)
 
 
+
 ## Venues
 
 Venues search endpoint: http://www.skiddle.com/api/v1/venues/ (method: GET) Gets multiple venues based upon search parameters (see below)
@@ -106,6 +107,7 @@ Venue details endpoint: http://www.skiddle.com/api/v1/venues/12345/ (method: GET
 **limit:** (integer, optional) Specify number of records returned (max 100, default 20)
 
 **offset:** (integer, optional) Specify record number to start at (for paging, in conjunction with limit, order) (default 0)
+
 
  
 ## Artists
