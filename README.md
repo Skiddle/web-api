@@ -13,12 +13,15 @@ All results are returned in plain-text JSON format which is cross-platform compa
 
 ### Authentication
 
-> All requests require a valid API key. For a free api key please [apply here](http://www.skiddle.com/api/join.php).
+```
+All requests require a valid API key. For a free api key please [apply here](http://www.skiddle.com/api/join.php).
+```
 
 To access the API you must specify your API KEY on all requests. This should be in the format 'api_key=abcdefghijklmnop'
 
 We monitor all requests and reserve the right to rate-limit or block any excessive requests. Limits are continually changed - please contact us if you are expecting to hit our API frequently.
 
+---
 
 ## Events
 
@@ -91,7 +94,7 @@ Event details endpoint: **http://www.skiddle.com/api/v1/events/12345/** (method:
 
 **offset:** (integer, optional) Specify record number to start at (for paging, in conjunction with limit, order) (default 0)
 
-
+---
 
 ## Venues
 
@@ -127,7 +130,7 @@ Venue details endpoint: **http://www.skiddle.com/api/v1/venues/12345/** (method:
 
 **offset:** (integer, optional) Specify record number to start at (for paging, in conjunction with limit, order) (default 0)
 
-
+---
  
 ## Artists
 
