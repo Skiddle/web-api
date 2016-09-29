@@ -30,7 +30,7 @@ Event details endpoint: **http://www.skiddle.com/api/v1/events/12345/** (method:
 
 ### Event search parameters
 
-#### Geographical:
+#### GEOGRAPHICAL
 
 **latitude:** (decimal, optional) Specify a latitude to find nearby events (eg 53.000)
 
@@ -45,7 +45,7 @@ Event details endpoint: **http://www.skiddle.com/api/v1/events/12345/** (method:
 **getdistance:** (bool, optional) Return the distance from your specified location _(for this parameter to work, you must also provide a latitude and a longitude)_
 
 
-#### Event filters:
+#### EVENT FILTERS
 
 **eventcode:** (string, optional) Filter by type of event. Note the category is selected by the event promoter when submitting the event so can be subjective! Choose from:
 
@@ -102,7 +102,7 @@ Venue details endpoint: **http://www.skiddle.com/api/v1/venues/12345/** (method:
 
 ### Venue search parameters
 
-#### Geographical:
+#### GEOGRAPHICAL
 
 **latitude:** (decimal, optional) Specify a latitude to find nearby venues(eg 53.000)
 
@@ -112,7 +112,7 @@ Venue details endpoint: **http://www.skiddle.com/api/v1/venues/12345/** (method:
 
 **_To use geo searching, all 3 of the above parameters must be specified._**
 
-#### Venue filters:
+#### VENUE FILTERS
 
 **type:** (string,optional) Type of venue. Chose from:
 
