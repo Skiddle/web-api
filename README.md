@@ -1,6 +1,25 @@
 # Skiddle Events Web API
 
 
+## Getting Started
+
+The Skiddle Events API has been developed to follow RESTful principles where possible (and not overly complicated). The aim has been to create an API which is simple and intuative to use rather than following strict policies to the letter.
+
+At present we don't have any client libraries available, but any REST library that allows you to specify the end-point can be used with this API.
+
+### Return format
+
+All results are returned in plain-text JSON format which is cross-platform compatible.
+
+### Authentication
+
+> All requests require a valid API key. For a free api key please [apply here](http://www.skiddle.com/api/join.php).
+
+To access the API you must specify your API KEY on all requests. This should be in the format 'api_key=abcdefghijklmnop'
+
+We monitor all requests and reserve the right to rate-limit or block any excessive requests. Limits are continually changed - please contact us if you are expecting to hit our API frequently.
+
+
 ## Events
 
 Events search endpoint: **http://www.skiddle.com/api/v1/events/** (method: GET) Gets multiple events based upon search parameters (see below).
