@@ -1,14 +1,16 @@
-# web-api
-## Skiddle events Web API
+# Skiddle Events Web API
+
+
+## Events
 
 Events search endpoint: **http://www.skiddle.com/api/v1/events/** (method: GET) Gets multiple events based upon search parameters (see below).
 
 Event details endpoint: **http://www.skiddle.com/api/v1/events/12345/** (method: GET) Gets information for a single event.
 
 
-## event search parameters
+### Event search parameters
 
-### Geographical:
+#### Geographical:
 
 **latitude:** (decimal, optional) Specify a latitude to find nearby events (eg 53.000)
 
@@ -23,7 +25,7 @@ Event details endpoint: **http://www.skiddle.com/api/v1/events/12345/** (method:
 **getdistance:** (bool, optional) Return the distance from your specified location _(for this parameter to work, you must also provide a latitude and a longitude)_
 
 
-### Event filters:
+#### Event filters:
 
 **eventcode:** (string, optional) Filter by type of event. Note the category is selected by the event promoter when submitting the event so can be subjective! Choose from:
 
@@ -69,3 +71,51 @@ Event details endpoint: **http://www.skiddle.com/api/v1/events/12345/** (method:
 **limit:** (integer, optional) Specify number of records returned (max 100, default 20)
 
 **offset:** (integer, optional) Specify record number to start at (for paging, in conjunction with limit, order) (default 0)
+
+
+## Venues
+
+Venues search endpoint: http://www.skiddle.com/api/v1/venues/ (method: GET) Gets multiple venues based upon search parameters (see below)
+
+Venue details endpoint: http://www.skiddle.com/api/v1/venues/12345/ (method: GET) Gets information for a single venue
+
+### Venue search parameters
+
+#### Geographical:
+
+**latitude:** (decimal, optional) Specify a latitude to find nearby venues(eg 53.000)
+
+**longitude:** (decimal, optional) Specify a longitude to find nearby venues(eg -1.234)
+
+**radius:** (decimal, optional) Find venues within the specified miles radius (eg 10)
+
+**_To use geo searching, all 3 of the above parameters must be specified._**
+
+#### Venue filters:
+
+**type:** (string,optional) Type of venue. Chose from:
+
+- B = Bar/Pub
+- N = Nightclub
+- L = Live Music
+- O = Outdoor venue
+- T = Theatre
+- S = Sports ground
+- G = Gallery
+
+**limit:** (integer, optional) Specify number of records returned (max 100, default 20)
+
+**offset:** (integer, optional) Specify record number to start at (for paging, in conjunction with limit, order) (default 0)
+
+ 
+## Artists
+
+Artists search endpoint: http://www.skiddle.com/api/v1/artists/ (method: GET) Gets multiple artists based upon search parameters (see below)
+
+### Artist search parameters
+
+**name:** (string, optional) Name of artist to search for
+
+**venueid:** (integer, optional) Find artists playing at a particular venue. See the venues search for details (as an integer)
+
+**b:** (integer, optional) Find artists playing for a particular brandID (eg Ministry of Sound). See the brands search for details
