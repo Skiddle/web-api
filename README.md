@@ -23,9 +23,11 @@ We monitor all requests and reserve the right to rate-limit or block any excessi
 
 ## Events
 
-Events search endpoint: **http://www.skiddle.com/api/v1/events/** (method: GET) Gets multiple events based upon search parameters (see below).
+Events search endpoint: **http://www.skiddle.com/api/v1/events/search/** (method: GET) Gets multiple events based upon search parameters (see below).
 
-Event details endpoint: **http://www.skiddle.com/api/v1/events/12345/** (method: GET) Gets information for a single event.
+> An example of a valid URL (returning gigs near Manchester City Centre) would be: http://www.skiddle.com/api/v1/events/search/?api_key=abcdefghijklmnop&latitude=53.4839&longitude=-2.2446&radius=5&eventcode=LIVE&order=distance&description=1
+
+Event details endpoint: **http://www.skiddle.com/api/v1/events/search/12345/** (method: GET) Gets information for a single event.
 
 
 ### Event search parameters
@@ -46,6 +48,8 @@ Event details endpoint: **http://www.skiddle.com/api/v1/events/12345/** (method:
 
 
 #### EVENT FILTERS
+
+**keyword:** (string, optional) Filter events using a keyword
 
 **eventcode:** (string, optional) Filter by type of event. Note the category is selected by the event promoter when submitting the event so can be subjective! Choose from:
 
@@ -68,6 +72,8 @@ Event details endpoint: **http://www.skiddle.com/api/v1/events/12345/** (method:
 **specialFeatured:** (bool, optional) Find events which are recommended by Skiddle
 
 **imagefilter:** (bool, optional) Find only events which have an image attached
+
+**description:** (bool, optional) Passing this parameter will mean that your results will contain artist and genre information for each event as well as the full event description
 
 **minDate:** (string, optional) Find events on or after this date. Format as YYYY-MM-DD
 
