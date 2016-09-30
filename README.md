@@ -73,7 +73,7 @@ Event details endpoint: **http://www.skiddle.com/api/v1/events/search/12345/** (
 
 **imagefilter:** (bool, optional) Find only events which have an image attached
 
-**description:** (bool, optional) Passing this parameter will mean that your results will contain artist and genre information for each event as well as the full event description
+**description:** (bool, optional) Passing this parameter will mean that your results will contain artist and genre information for each event
 
 **minDate:** (string, optional) Find events on or after this date. Format as YYYY-MM-DD
 
