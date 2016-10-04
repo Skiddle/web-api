@@ -75,6 +75,8 @@ Event details endpoint: **http://www.skiddle.com/api/v1/events/search/12345/** (
 
 **description:** (bool, optional) Passing this parameter will mean that your results will contain artist and genre information for each event
 
+**under18:** (bool, optional) Find only events which under 18's are allowed to attend
+
 **minDate:** (string, optional) Find events on or after this date. Format as YYYY-MM-DD
 
 **maxDate:** (string, optional) Find events before or on this date. Format as YYYY-MM-DD
