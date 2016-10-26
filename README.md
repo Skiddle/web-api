@@ -90,7 +90,6 @@ Event details endpoint: **http://www.skiddle.com/api/v1/events/search/12345/** (
 
 **order:** (string, optional) Specify sort order. Chose from:
 
-- random = returns the events in a random order
 - trending = will return the events in trending order for the preceeding week
 - goingto = will order the events by the amount of people attending
 - distance = will return the events from closest to furthest from your specified location _(for this parameter to work, you must also provide a latitude and a longitude)_
