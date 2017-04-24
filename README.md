@@ -81,12 +81,13 @@ Event details endpoint: **http://www.skiddle.com/api/v1/events/search/12345/** (
 
 **maxDate:** (string, optional) Find events before or on this date. Format as YYYY-MM-DD
 
-**venueid:** (integer, optional) Find events at a particular venue. See the venues search for details (as an integer)
+**venueid:** (integer, optional) Find events at a particular venue. See the venues search for details. Can either be an integer, or a string of comma seperated integers (eg venueid=1,2,3)
 
 **b:** (integer, optional) Find events attached to a particular brandID (eg Ministry of Sound). See the brands search for details
 
 **a:** (integer, optional) Find events that a particular artistID is tagged to (eg Riva Starr). See the artsits search for details
 
+**g:** (integer, optional) Find events that a particular genreID is tagged to (eg Pop). Can either be an integer, or a string of comma seperated integers (eg g=1,2,3)
 
 **order:** (string, optional) Specify sort order. Chose from:
 
