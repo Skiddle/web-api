@@ -27,7 +27,7 @@ Events search endpoint: **http://www.skiddle.com/api/v1/events/search/** (method
 
 > An example of a valid URL (returning gigs near Manchester City Centre) would be: http://www.skiddle.com/api/v1/events/search/?api_key=abcdefghijklmnop&latitude=53.4839&longitude=-2.2446&radius=5&eventcode=LIVE&order=distance&description=1
 
-Event details endpoint: **http://www.skiddle.com/api/v1/events/search/12345/** (method: GET) Gets information for a single event.
+Event details endpoint: **http://www.skiddle.com/api/v1/events/12345/** (method: GET) Gets information for a single event.
 
 
 ### Event search parameters
@@ -42,14 +42,14 @@ Event details endpoint: **http://www.skiddle.com/api/v1/events/search/12345/** (
 
 **_To use geo searching, all 3 of the above parameters must be specified._**
 
-**country:** (string, optional) Find events within a certain country, using a specific country code (eg GB)
+**country:** (string, optional) Find events within a certain country, using a specific ISO country code (eg GB)
 
 **getdistance:** (bool, optional) Return the distance from your specified location _(for this parameter to work, you must also provide a latitude and a longitude)_
 
 
 #### EVENT FILTERS
 
-**keyword:** (string, optional) Filter events using a keyword
+**keyword:** (string, optional) Search events using a keyword
 
 **eventcode:** (string, optional) Filter by type of event. Note the category is selected by the event promoter when submitting the event so can be subjective! Choose from:
 
@@ -91,12 +91,17 @@ Event details endpoint: **http://www.skiddle.com/api/v1/events/search/12345/** (
 
 **order:** (string, optional) Specify sort order. Chose from:
 
-- trending = will return the events in trending order for the preceeding week
+
+- date = will order by event date
+- bestselling = will order by bestselling events
+- trending = will return the events in trending order for the preceeding week (default)
 - goingto = will order the events by the amount of people attending
 - distance = will return the events from closest to furthest from your specified location _(for this parameter to work, you must also provide a latitude and a longitude)_
 
 
 **limit:** (integer, optional) Specify number of records returned (max 100, default 20)
+
+**shufflelimit:** (integer, optional) Used in conjunction with limit, API will retrieve {shufflelimit} events, randomise them, then return final {limit} events. This can be used to return a random subset of events that changes each time.
 
 **offset:** (integer, optional) Specify record number to start at (for paging, in conjunction with limit, order) (default 0)
 
