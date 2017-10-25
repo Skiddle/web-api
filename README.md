@@ -13,21 +13,25 @@ All results are returned in plain-text JSON format which is cross-platform compa
 
 ### Authentication
 
-> All requests require a valid API key. For a free api key please [apply here](http://www.skiddle.com/api/join.php).
+> All requests require a valid API key. For a free api key please [apply here](https://www.skiddle.com/api/join.php).
 
 To access the API you must specify your API KEY on all requests. This should be in the format 'api_key=abcdefghijklmnop'
 
 We monitor all requests and reserve the right to rate-limit or block any excessive requests. Limits are continually changed - please contact us if you are expecting to hit our API frequently.
 
+### HTTPS
+
+All requests must be made over HTTPS (TLS 1.1+)
+
 ---
 
 ## Events
 
-Events search endpoint: **http://www.skiddle.com/api/v1/events/search/** (method: GET) Gets multiple events based upon search parameters (see below).
+Events search endpoint: **https://www.skiddle.com/api/v1/events/search/** (method: GET) Gets multiple events based upon search parameters (see below).
 
-> An example of a valid URL (returning gigs near Manchester City Centre) would be: http://www.skiddle.com/api/v1/events/search/?api_key=abcdefghijklmnop&latitude=53.4839&longitude=-2.2446&radius=5&eventcode=LIVE&order=distance&description=1
+> An example of a valid URL (returning gigs near Manchester City Centre) would be: https://www.skiddle.com/api/v1/events/search/?api_key=abcdefghijklmnop&latitude=53.4839&longitude=-2.2446&radius=5&eventcode=LIVE&order=distance&description=1
 
-Event details endpoint: **http://www.skiddle.com/api/v1/events/12345/** (method: GET) Gets information for a single event.
+Event details endpoint: **https://www.skiddle.com/api/v1/events/12345/** (method: GET) Gets information for a single event.
 
 
 ### Event search parameters
@@ -109,9 +113,9 @@ Event details endpoint: **http://www.skiddle.com/api/v1/events/12345/** (method:
 
 ## Venues
 
-Venues search endpoint: **http://www.skiddle.com/api/v1/venues/** (method: GET) Gets multiple venues based upon search parameters (see below)
+Venues search endpoint: **https://www.skiddle.com/api/v1/venues/** (method: GET) Gets multiple venues based upon search parameters (see below)
 
-Venue details endpoint: **http://www.skiddle.com/api/v1/venues/12345/** (method: GET) Gets information for a single venue
+Venue details endpoint: **https://www.skiddle.com/api/v1/venues/12345/** (method: GET) Gets information for a single venue
 
 ### Venue search parameters
 
@@ -145,7 +149,7 @@ Venue details endpoint: **http://www.skiddle.com/api/v1/venues/12345/** (method:
  
 ## Artists
 
-Artists search endpoint: **http://www.skiddle.com/api/v1/artists/** (method: GET) Gets multiple artists based upon search parameters (see below)
+Artists search endpoint: **https://www.skiddle.com/api/v1/artists/** (method: GET) Gets multiple artists based upon search parameters (see below)
 
 ### Artist search parameters
 
