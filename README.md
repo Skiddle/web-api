@@ -21,7 +21,7 @@ We monitor all requests and reserve the right to rate-limit or block any excessi
 
 ### HTTPS
 
-All requests must be made over HTTPS (TLS 1.1+)
+All requests must be made over HTTPS (TLS v1.2+)
 
 ---
 
