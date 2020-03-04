@@ -3,7 +3,7 @@
 
 ## Getting Started
 
-The Skiddle Events API has been developed to follow RESTful principles where possible (and not overly complicated). The aim has been to create an API which is simple and intuative to use rather than following strict policies to the letter.
+The Skiddle Events API has been developed to follow RESTful principles where possible (and not overly complicated). The aim has been to create an API which is simple and intuitive to use rather than following strict policies to the letter.
 
 At present we don't have any client libraries available, but any REST library that allows you to specify the end-point can be used with this API.
 
@@ -64,7 +64,7 @@ Event details endpoint: **https://www.skiddle.com/api/v1/events/12345/** (method
 - THEATRE = Theatre/Dance
 - COMEDY = Comedy
 - EXHIB = Exhibitions and Attractions
-- KIDS = Kids/Family Event
+- KIDS = Kids/Family event
 - BARPUB = Bar/Pub event
 - LGB = Gay/Lesbian event
 - SPORT = Sporting event
@@ -91,14 +91,14 @@ Event details endpoint: **https://www.skiddle.com/api/v1/events/12345/** (method
 
 **a:** (integer, optional) Find events that a particular artistID is tagged to (eg Riva Starr). See the artsits search for details
 
-**g:** (integer, optional) Find events that a particular genreID is tagged to (eg Pop). Can either be an integer, or a string of comma seperated integers (eg g=1,2,3)
+**g:** (integer, optional) Find events that a particular genreID is tagged to (eg Pop). Can either be an integer, or a string of comma separated integers (eg g=1,2,3)
 
-**order:** (string, optional) Specify sort order. Chose from:
+**order:** (string, optional) Specify sort order. Choose from:
 
 
 - date = will order by event date
 - bestselling = will order by bestselling events
-- trending = will return the events in trending order for the preceeding week (default)
+- trending = will return the events in trending order for the preceding week (default)
 - goingto = will order the events by the amount of people attending
 - distance = will return the events from closest to furthest from your specified location _(for this parameter to work, you must also provide a latitude and a longitude)_
 
